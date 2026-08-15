@@ -1,46 +1,113 @@
-* {
+*,
+::after,
+::before {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 body {
-  font-family: Arial, sans-serif;
-  font-size: 15px;
-  color: rgb(92, 92, 129)
-
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  line-height: 18px;;
 }
-.product-title {
-  background-image: url("images/card_fone.png");
-  background-repeat: no-repeat;
-  background:position 160px 20px;
-  font-family: "Montserrat", sans-serif;
-  width: 846px;
+.title {
   font-size: 70px;
   font-weight: 400;
-  color: #515076;
-  text-align: center;
-  font-style: regular;
+  line-height: 78px;
   margin: 0 auto;
-  margin-bottom: 50px;
-  padding: 100px 0 100px 0;
+  text-align: center;
+  color: #515076;
+
 }
-.product-list {
+
+.clear-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.products {
   display: flex;
   flex-wrap: wrap;
-  list-style-type: none;
-  background-color: #f7f7fa;
   justify-content: center;
-  gap: 60px;
+  gap: 45px;
 }
-.product-header {
-  gap: 30px;
-  width: 340px;
-  padding: 25px;
-  background-color: #f7f7fa;
+
+
+.products_item {
+ width: 340px;
+  border-radius: 10px;
+  border: 5px solid #e3e3e31a;
 }
-.product-compound {
-  margin-left: 0px;
-  padding-left:0px;
-  list-style-position: inside;
-  margin-bottom: 25px;
+
+
+.card {
+  background: color #f7f7f7;;
+  padding:  25px;
+}
+
+.card_image{
+  display: block;
+}
+
+.card_category{
+  display: block;
+  font-size: 13px;
+  line-height: 18px;
+  color: #8c8c8c;
+  text-transform: uppercase;
+}
+.card_name{
+  font-size: 20px;
+  margin: 0px;
+  line-height: 27px;
+}
+
+.card_description{
+  font-size: 13px;
+  line-height: 18px;
+  color: #515076;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+.card_description p:first-child {
+  margin-top: 0;
+}
+.card__compound {
+  width: 252px;
+  height: 87px;
+}
+.compound__name {
+  font-size: 13px;
+  line-height: 18px;
+}
+.compound__list{
+  font-size: 13px;
+  padding-left: 15px;
+}
+.card__price {
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.container {
+  width: 1110px;
+  margin: 0 auto;
+
+}
+
+.catalog__container {
+  background-image: url(images/card_fone.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  padding-top: 220px;
+}
+
+.catalog__title {
+  margin-top: 0px;
+  margin-bottom: 110px;
+  
 }
