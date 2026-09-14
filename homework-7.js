@@ -21,7 +21,7 @@ const price = 5000
 function buyProduct (budget) { 
   if  (budget >=price)  {  return `${product} ( `${product} приобретен . `Спасибо за покупку !`; 
   } else  {const difference = price-budget;
-    return `Вам не хватает `${difference}$,пополните баланс ;
+    return `Вам не хватает `${difference}$,`пополните баланс` ;
   }
 }
 
